@@ -1,0 +1,10 @@
+
+@media (max-width: 390px) {
+    .root {
+      display: flex;
+      justify-content: space-between;
+      padding: 2.4rem 1.6rem;
+      height: 7rem;
+    }
+  }
+  

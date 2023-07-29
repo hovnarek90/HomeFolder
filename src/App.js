@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import PassRegistration from "./components/Layouts/Registration/PassengerReg/PassangerRegistr";
+import DriverRegistration from "./components/Layouts/Registration/DriverReg/DriverRegistr";
+ 
+// import Header from "./components/Layouts/Header/Header.jsx";
+// import Main from "./components/Layouts/Main/Main";
 
 function App() {
+  const [pass, setPass] = useState(false);
+  const [driver, setDriver] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <button type="button" onClick={()=>{setDriver(!driver)}}>Driver</button>
+      {driver ? <DriverRegistration /> : null }
+    <button type="button" onClick={()=>{setPass(!pass)}}>Passenger</button>
+      {pass ? <PassRegistration /> : null }
+
+      {/* <Header />
+      <Main /> */}
+    </>
   );
 }
 
