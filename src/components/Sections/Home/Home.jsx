@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./home.module.css";
-import RepeatSvg from "../../svgs/repeatSvg";
-import From from "../../svgs/fromLogo";
-import To from "../../svgs/toLogo";
-import Date from "../../svgs/dateTime";
-import User from "../../svgs/person";
+import RepeatSvg from "../../Svg/repeatSvg";
+import From from "../../Svg/fromLogo";
+import To from "../../Svg/toLogo";
+import Date from "../../Svg/dateTime";
+import User from "../../Svg/person";
 
 const Home = () => {
-  const [searching, setSearching] = useState("");
   const array = [
     "Yerevan", "Gyumri", "Ashtarak",
     "Goris", "Abaran", "Avan", "Ijevan",
@@ -18,14 +17,7 @@ const Home = () => {
     let input = document.getElementById('searchbar').value;
     input = input.toLowerCase();
 
-    // return array.includes(input);
-
-    for (let i = 0; i < array.length; i++) {
-      if (array[i].toLowerCase() === input) {
-        console.log("hello");
-      }
-      console.log("Error");
-    }
+    return array.includes(input);
   }
 
   return <div className={classes.root}>

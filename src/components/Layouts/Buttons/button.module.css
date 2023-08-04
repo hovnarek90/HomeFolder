@@ -1,0 +1,23 @@
+.custombutton{
+    display: flex;
+    margin-top: 2rem;
+    width: 343px;
+    height: 48px;
+    padding: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+
+.setbtn {
+    padding: 0 1.6rem;
+  }

@@ -1,0 +1,23 @@
+@media (max-width: 390px) {
+    .container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textInfo {
+        font-family: "Poppins";
+        src: local("Poppins"),
+        url(../../../../Fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 760px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
