@@ -64,7 +64,7 @@ const PassRegistration = () => {
               onChange={handleChange}
             />
             <br />
-            {errors.fullName}
+            <div style={{ color: "red" }}> {errors.fullName}</div>
           </div>
           <div className={classes.inppassword}>
             <label htmlFor="myPassword">Password</label>
@@ -77,7 +77,7 @@ const PassRegistration = () => {
               onChange={handleChange}
             />
             <br />
-            {errors.password}
+            <div style={{ color: "red" }}> {errors.password}</div>
           </div>
         </div>
         <div className={classes.forgetPassword}>
@@ -96,12 +96,12 @@ const PassRegistration = () => {
           <CheckButton
             text="Google"
             onClick={handleButtonClick}
-            className={classes.googleRegistr}
+            className={classes.signinbutton}
           />
           <CheckButton
             text="Facebook"
             onClick={handleButtonClick}
-            className={classes.facebookRegistr}
+            className={classes.signinbuttonFb}
           />
         </div>
       </form>
