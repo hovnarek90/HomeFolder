@@ -80,9 +80,7 @@ const PassRegistration = () => {
             <div style={{ color: "red" }}> {errors.password}</div>
           </div>
         </div>
-        <div className={classes.forgetPassword}>
-          <a href="/">Forget Password?</a>
-        </div>
+
         <CheckButton
           text="Register"
           onClick={handleButtonClick}
@@ -103,6 +101,11 @@ const PassRegistration = () => {
             onClick={handleButtonClick}
             className={classes.signinbuttonFb}
           />
+        </div>
+        <div className={classes.link}>
+          <p>
+            Don’t have an account?<a href="#">Register</a>
+          </p>{" "}
         </div>
       </form>
     </div>

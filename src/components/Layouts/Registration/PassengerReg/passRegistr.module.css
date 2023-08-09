@@ -1,6 +1,6 @@
 .general {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   font-family: "Poppins";
   src: local("Poppins"),
@@ -23,7 +23,7 @@
 }
 
 .info {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   margin-top: 3.2rem;
   padding: 0 1.6rem;
@@ -34,12 +34,12 @@
 }
 
 .inpname {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 
 .inppassword {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 
@@ -55,7 +55,7 @@
 
 .inpname > input,
 .inppassword > input {
-  display: flex;
+  /* display: flex; */
   width: 343px;
   height: 48px;
   padding: 10px;
@@ -68,6 +68,7 @@
 }
 
 .registerButton {
+  margin: 20px 0;
   color: #fff;
   background: #226ce0;
 }
@@ -84,18 +85,25 @@
   padding: 0 1.6rem;
 } */
 form {
+  margin-top: 20px;
   padding: 0 1.6rem;
 }
 
-.forgetPassword a {
-  margin-left: 65%;
-  color: #226ce0;
-  text-align: right;
+.link {
+  text-align: center;
   font-family: Poppins;
   font-size: 14px;
+  margin-top: 20px;
+}
+.link p {
+  color: rgba(27, 37, 48, 1);
+}
+.link a {
+  color: #226ce0;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 171.429% */
+  margin: 2rem;
 }
 
 .hrwithtext {
